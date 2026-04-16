@@ -965,13 +965,6 @@ details[open] summary.faq-question::after {
   0%, 49% { opacity: 1; }
   50%, 100% { opacity: 0; }
 }
-.p-header span::after {
-  content: '█';
-  font-size: 14px;
-  margin-left: 2px;
-  animation: terminal-blink 0.9s steps(1) infinite;
-  color: var(--loud-cyan);
-}
 
 /* ═══════════════════════════════════════════
    ANIM #4 — CUSTOM CROSSHAIR CURSOR

@@ -52,3 +52,19 @@ if (dot && window.matchMedia("(pointer: fine)").matches) {
 } else if (dot) {
   dot.style.display = "none";
 }
+
+const navToggleBtn = document.getElementById("nav-toggle-btn");
+const navbar = document.querySelector(".navbar");
+
+if (navToggleBtn && navbar) {
+  navToggleBtn.addEventListener("click", () => {
+    navbar.classList.toggle("nav-open");
+  });
+
+  const navLinks = document.querySelectorAll(".nav-links a, .nav-cta a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navbar.classList.remove("nav-open");
+    });
+  });
+}

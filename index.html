@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -17,9 +17,10 @@
     ════════════════════════════════════════ -->
     <header class="navbar">
       <nav class="nav-inner" aria-label="Navigasi utama">
-        <a href="#" class="nav-logo" aria-label="TeamMatch Home"
-          >Team<span class="shape-star">❋</span>Match</a
-        >
+        <a href="#" class="nav-logo" aria-label="TeamMatch Home">
+          <img src="images/logo.svg" alt="TeamMatch" class="logo-img">
+          TeamMatch
+        </a>
         <ul class="nav-links">
           <li><a href="#features">Fitur_</a></li>
           <li><a href="#how-it-works">Cara-Kerja_</a></li>
@@ -74,11 +75,11 @@
             </div>
 
             <div class="stats-brutal">
-              <div class="stat-box pink">
+              <div class="stat-box bg-pink">
                 <span class="stat-num">2.4K</span>
                 <span class="stat-lbl">USER TERDAFTAR</span>
               </div>
-              <div class="stat-box cyan">
+              <div class="stat-box bg-cyan">
                 <span class="stat-num">580</span>
                 <span class="stat-lbl">TIM KE-BUILD</span>
               </div>
@@ -104,7 +105,8 @@
                 </div>
                 <div class="p-banner">
                   <h2>HACKATHON BI 2026</h2>
-                  <p>DEADLINE: 12 DAYS. LFG!!</p>
+                  <p>DEADLINE: 12 DAYS. LFG!!</p><br>
+                  <img src="images/hero-illustration.webp" alt="Neo Brutalist Illustration" class="img-brutal img-block-full">
                 </div>
                 <div class="p-candidates">
                   <div class="p-cand-item">
@@ -198,7 +200,7 @@
 
           <div class="features-grid">
             <article class="feature-card bg-yellow slam-target">
-              <div class="f-icon">1.</div>
+              <div class="f-icon"><img src="images/icon_filter.webp" alt="Smart Filter" class="f-icon-image"></div>
               <h3 class="f-title">SMART FILTER</h3>
               <p class="f-desc">
                 Cari berdasarkan role, kampus, time availability. Sistem langsung
@@ -207,7 +209,7 @@
             </article>
 
             <article class="feature-card bg-cyan slam-target">
-              <div class="f-icon">2.</div>
+              <div class="f-icon"><img src="images/icon_trust.webp" alt="Trust Layer" class="f-icon-image"></div>
               <h3 class="f-title">TRUST LAYER</h3>
               <p class="f-desc">
                 Ada bintang dan testimoni dari tim sebelumnya. Orang toxic bakal
@@ -216,7 +218,7 @@
             </article>
 
             <article class="feature-card bg-pink slam-target">
-              <div class="f-icon">3.</div>
+              <div class="f-icon"><img src="images/icon_idea.webp" alt="Idea Board" class="f-icon-image"></div>
               <h3 class="f-title">BOARD IDE_</h3>
               <p class="f-desc">
                 Ada ide tapi ga ada tim? Drop ide kamu di Board, biarkan
@@ -224,8 +226,8 @@
               </p>
             </article>
 
-            <article class="feature-card slam-target" style="background: #fff">
-              <div class="f-icon" style="color: #000">4.</div>
+            <article class="feature-card bg-white slam-target">
+              <div class="f-icon"><img src="images/icon_auth.webp" alt="Academic Auth" class="f-icon-image"></div>
               <h3 class="f-title">EMAIL AC.ID_</h3>
               <p class="f-desc">
                 Login wajib via email domain kampus. No spammers, no fake account.
@@ -233,8 +235,8 @@
               </p>
             </article>
 
-            <article class="feature-card slam-target" style="background: #fff">
-              <div class="f-icon" style="color: #000">5.</div>
+            <article class="feature-card bg-white slam-target">
+              <div class="f-icon"><img src="images/icon_tracker.webp" alt="Application Tracker" class="f-icon-image"></div>
               <h3 class="f-title">TRACKER_</h3>
               <p class="f-desc">
                 Status lamaran transparan: Terkirim -> Direview -> Keputusan. Gak
@@ -242,8 +244,8 @@
               </p>
             </article>
 
-            <article class="feature-card slam-target" style="background: #fff">
-              <div class="f-icon" style="color: #000">6.</div>
+            <article class="feature-card bg-white slam-target">
+              <div class="f-icon"><img src="images/icon_lock.webp" alt="Commitment Lock" class="f-icon-image"></div>
               <h3 class="f-title">VERIFY_COMMIT</h3>
               <p class="f-desc">
                 Tim baru valid kalau semua anggota menyetujui komitmen scope dan
@@ -408,7 +410,10 @@
       <div class="container">
         <div class="footer-layout">
           <div class="brand-col">
-            <a href="#" class="nav-logo loud">TeamMatch_</a>
+            <a href="#" class="nav-logo loud footer-logo">
+              <img src="images/logo.svg" alt="TeamMatch" class="logo-img large">
+              TeamMatch_
+            </a>
             <p class="f-desc">
               Skill-based matching engine for heavy-hitter students.
             </p>
@@ -446,6 +451,6 @@
 
     <div id="cursor-dot" aria-hidden="true"></div>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
